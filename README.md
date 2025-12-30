@@ -17,14 +17,14 @@ CSV File upload -> S3 Bucket -> Lambda -> IAM Operations -> CloudTrail -> CloudW
 
 ## Architecture Components
 
-- **Amazon S3** - Stores CSV file and triggers the workflow 
-- **AWS Lambda (Python)** - Parses input and performs IAM operations
-- **AWS IAM** - Users, groups, and permissions
-- **AWS CloudTrial** - Captures all IAM API activity 
-- **CloudWatch Logs** - Stores structured CloudTrial events
-- **Metric Filters** - Detect specific identity-related actions 
-- **CloudWatch Alarms** - Notify when monitored events occur
-- **SNS** - Sends email alerts 
+**Amazon S3** - Stores CSV file and triggers the workflow 
+**AWS Lambda (Python)** - Parses input and performs IAM operations
+**AWS IAM** - Users, groups, and permissions
+**AWS CloudTrial** - Captures all IAM API activity 
+**CloudWatch Logs** - Stores structured CloudTrial events
+**Metric Filters** - Detect specific identity-related actions 
+**CloudWatch Alarms** - Notify when monitored events occur
+**SNS** - Sends email alerts 
 
 ## CSV Format 
 
