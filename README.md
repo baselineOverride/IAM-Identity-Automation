@@ -6,7 +6,7 @@ The automation follows a straightforward event-driven pattern:
 
 CSV File upload -> S3 Bucket -> Lambda -> IAM Operations -> CloudTrail -> CloudWatch Logs -> Metric Filters -> Alarms -> SNS Email
 
-## Key Capabilities
+## 🚀 Key Capabilities
 
 - Automated user provisioning based on CSV input.
 - Group assignment and reassignment for role changes.
@@ -15,7 +15,7 @@ CSV File upload -> S3 Bucket -> Lambda -> IAM Operations -> CloudTrail -> CloudW
 - Operational monitoring with CloudWatch metric filters.
 - Email alerts for sensitive identity events via SNS.
 
-## Architecture Components
+## 🛠️ Architecture Components
 
 * **Amazon S3** - Stores CSV file and triggers the workflow 
 * **AWS Lambda (Python)** - Parses input and performs IAM operations
@@ -26,7 +26,7 @@ CSV File upload -> S3 Bucket -> Lambda -> IAM Operations -> CloudTrail -> CloudW
 * **CloudWatch Alarms** - Notify when monitored events occur
 * **SNS** - Sends email alerts 
 
-## CSV Format 
+## 📁 CSV Format 
 
 ```csv
 username,position,mode
