@@ -43,4 +43,4 @@ daniel,security,move
 
 ## 1. S3 Trigger Setup
 
-![S3 Trigger Setup](imgs/)
+![S3 Trigger Setup](examples/screenshots/EventNotification.png)
