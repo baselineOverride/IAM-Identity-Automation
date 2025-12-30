@@ -1,0 +1,7 @@
+username,position,mode
+daniel,dev,add
+sarah,security,add
+samuel,readonly,add
+sarah,readonly,move
+samuel,security,remove
+daniel,security,move
