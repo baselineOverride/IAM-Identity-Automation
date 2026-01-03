@@ -49,14 +49,18 @@ S3 bucket configuration that triggers the Lambda function whenever a CSV file is
 
 ## 2. Lambda Functions
 
+![Lambda Handler Function](examples/screenshots/LambdaFunction.png)
 Lambda function used for processing the CSV file and performing IAM operations. 
 
+![Lambda Test](examples/screenshots/LambdaTest.png)
 Before deploying the function onto my Cloud Environment I ran various tests with sample CSV files through the lambda console.
 
+![Query Search](examples/screenshots/QueriesCloudWatch.png)
 Once deployed, using a CloudWatch log query tool, I could confirm that each joiner, mover and leaver action was executed successfully. 
 
 ## 3. IAM Users Created by Automation
 
+![IAM Console](examples/screenshots/IAMConsole.png)
 This screenshot shows the IAM console with users created automatically from the CSV input. This verifies that the automation process is functioning as expected. The 
 
 
