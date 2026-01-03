@@ -49,7 +49,7 @@ S3 bucket configuration that triggers the Lambda function whenever a CSV file is
 
 ## 2. Lambda Functions
 
-![Lambda Handler Function](examples/screenshots/LambdaFunction.png)
+<img src="examples/screenshots/LambdaFunction.png" alt="Lambda Handler Function" width="200">
 Lambda function used for processing the CSV file and performing IAM operations. 
 
 ![Lambda Test](examples/screenshots/LambdaTest.png)
