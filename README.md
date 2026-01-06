@@ -60,23 +60,28 @@ Once deployed, using a CloudWatch log query tool, I could confirm that each join
 
 ## IAM Users Created by Automation and Group Memberships
 
-![IAM Console](examples/screenshots/IAMConsole.png)
-This screenshot shows the IAM console with users created automatically from the CSV input. This verifies that the automation process is functioning as expected. The 
+Solarized dark                                       |  Solarized Ocean
+:---------------------------------------------------:|:---------------------------------------------------:
+![IAM Console](examples/screenshots/IAMConsole.png)  |  ![User Verify](examples/screenshots/UserVerify.png)
 
-![User Verify](examples/screenshots/UserVerify.png)
+This screenshot shows the IAM console with users created automatically from the CSV input. This verifies that the automation process is functioning as expected. All users are in their respective IAM group memberships, a good signal that the system correctly assigns, moves and removes users.
 
 ## CloudTrail IAM Activity Record
 
 ![CloudTrial Config](examples/screenshots/CloudTrialConfig.png)
+All CloudTrail events that captured IAM actions performed by automation are stored and sent to a respective bucket, therefore all identity changes are fully auditable and traceable which is a very important concept in real enterprise environments.
 
 ## CloudWatch Metric Filters
 
 ![Metric Filters](examples/screenshots/MetricFilters.png)
+CloudWatch metric filters I configured to detect specific IAM events inside CloudTrail logs. This represents a monitoring layer of the system and proves that the automation is performing identity changes as well as exposing them to observability.
 
 ## CloudWatch Alarm Configuration
 
 ![Alarms](examples/screenshots/Alarms.png)
+This image displays the CloudWatch alarm I created to notify when a user is added to a group. For simplicity I have only made one with this simple condition. A more common use of this would be to monitor everytime a user is added to any sensitive groups or administrative roles.
 
 ## SNS Event Notification
 
 ![SNS](examples/screenshots/SNS-Alarm.png)
+This is a screenshot of the SNS email notification generated when the event triggered. It demonstrates the final step of the monitoring workflow. 
