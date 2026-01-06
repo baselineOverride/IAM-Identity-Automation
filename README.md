@@ -64,6 +64,11 @@ Solarized dark                                       |  Solarized Ocean
 :---------------------------------------------------:|:---------------------------------------------------:
 ![IAM Console](examples/screenshots/IAMConsole.png)  |  ![User Verify](examples/screenshots/UserVerify.png)
 
+<p float="left">
+  <img src="examples/screenshots/IAMConsole.png" width="100" />
+  <img src="examples/screenshots/UserVerify.png" width="100" /> 
+</p>
+
 This screenshot shows the IAM console with users created automatically from the CSV input. This verifies that the automation process is functioning as expected. All users are in their respective IAM group memberships, a good signal that the system correctly assigns, moves and removes users.
 
 ## CloudTrail IAM Activity Record
