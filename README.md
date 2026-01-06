@@ -41,13 +41,13 @@ daniel,security,move
 - **position** maps to IAM groups
 - **mode** determines the lifecycle action/operation 
 
-## 1. S3 Trigger Setup
+## S3 Event Notification
 
 ![S3 Trigger Setup](examples/screenshots/EventNotification.png)
 
 S3 bucket configuration that triggers the Lambda function whenever a CSV file is uploaded. 
 
-## 2. Lambda Functions
+## Lambda Function
 
 <img src="examples/screenshots/LambdaFunction.png" alt="Lambda Handler Function" width="200">
 Lambda function used for processing the CSV file and performing IAM operations. 
@@ -58,9 +58,25 @@ Before deploying the function onto my Cloud Environment I ran various tests with
 ![Query Search](examples/screenshots/QueriesCloudWatch.png)
 Once deployed, using a CloudWatch log query tool, I could confirm that each joiner, mover and leaver action was executed successfully. 
 
-## 3. IAM Users Created by Automation
+## IAM Users Created by Automation and Group Memberships
 
 ![IAM Console](examples/screenshots/IAMConsole.png)
 This screenshot shows the IAM console with users created automatically from the CSV input. This verifies that the automation process is functioning as expected. The 
 
+![User Verify](examples/screenshots/UserVerify)
 
+## CloudTrail IAM Activity Record
+
+![CloudTrial Config](examples/screenshots/CloudTrialConfig)
+
+## CloudWatch Metric Filters
+
+![Metric Filters](examples/screenshots/MetricFilters)
+
+## CloudWatch Alarm Configuration
+
+![Alarms](examples/screenshots/Alarms)
+
+## SNS Event Notification
+
+![SNS](examples/screenshots/SNS-Alarm)
