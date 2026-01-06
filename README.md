@@ -63,20 +63,20 @@ Once deployed, using a CloudWatch log query tool, I could confirm that each join
 ![IAM Console](examples/screenshots/IAMConsole.png)
 This screenshot shows the IAM console with users created automatically from the CSV input. This verifies that the automation process is functioning as expected. The 
 
-![User Verify](examples/screenshots/UserVerify)
+![User Verify](examples/screenshots/UserVerify.png)
 
 ## CloudTrail IAM Activity Record
 
-![CloudTrial Config](examples/screenshots/CloudTrialConfig)
+![CloudTrial Config](examples/screenshots/CloudTrialConfig.png)
 
 ## CloudWatch Metric Filters
 
-![Metric Filters](examples/screenshots/MetricFilters)
+![Metric Filters](examples/screenshots/MetricFilters.png)
 
 ## CloudWatch Alarm Configuration
 
-![Alarms](examples/screenshots/Alarms)
+![Alarms](examples/screenshots/Alarms.png)
 
 ## SNS Event Notification
 
-![SNS](examples/screenshots/SNS-Alarm)
+![SNS](examples/screenshots/SNS-Alarm.png)
