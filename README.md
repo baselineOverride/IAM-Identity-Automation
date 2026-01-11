@@ -109,6 +109,20 @@ Before deploying the function onto my Cloud Environment I ran various tests with
 ![Query Search](examples/screenshots/QueriesCloudWatch.png)
 Once deployed, using a CloudWatch log query tool, I could confirm that each joiner, mover and leaver action was executed successfully. 
 
+**Query**:
+```SQL
+SELECT
+  eventtime,
+  eventname,
+  useridentity.invokedby,
+  useridentity.sessioncontext.sessionissuer.username
+FROM cloudtrail_logs_aws_cloudtrail_logs_061640053825_ecce3c24
+WHERE
+  eventsource = 'iam.amazonaws.com'
+  AND eventname IN ('CreateUser', 'DeleteUser')
+ORDER BY eventtime DESC;
+```
+
 ---
 
 ## IAM Users Created by Automation and Group Memberships
