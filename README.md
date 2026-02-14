@@ -183,8 +183,14 @@ This is a screenshot of the SNS email notification generated when the event trig
 
 ---
 
+## Disclaimer
+
+All sensitive information (API keys, credentials, IP addresses, and subscription details) has been redacted.
+
+---
+
 **Author**: [Daniel Krakolinig] 
 
-**Version**: 1.0
+**Version**: 1.1
 
-**Last Updated**: January 2025
+**Last Updated**: January 2026
